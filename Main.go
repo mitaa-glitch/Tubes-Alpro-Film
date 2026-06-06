@@ -42,6 +42,7 @@ func menuTambah() {
 
 	fmt.Print("Judul  : ")
 	fmt.Scan(&judul)
+	judul = strings.ToUpper(string(judul[0])) + judul[1:]
 	fmt.Print("Genre  : ")
 	fmt.Scan(&genre)
 	fmt.Print("Status (ditonton/belum): ")
@@ -63,6 +64,7 @@ func menuUbah() {
 	fmt.Scan(&judulLama)
 	fmt.Print("Judul baru : ")
 	fmt.Scan(&judulBaru)
+	judulBaru = strings.ToUpper(string(judulBaru[0])) + judulBaru[1:]
 	fmt.Print("Genre baru : ")
 	fmt.Scan(&genreBaru)
 	fmt.Print("Status baru (ditonton/belum): ")
